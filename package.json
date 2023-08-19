@@ -1,17 +1,22 @@
 {
-  "name": "unstopable-teams",
+  "name": "React-Authentication",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@react-pdf/renderer": "^3.1.12",
-    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "pdf-lib": "^1.17.1",
-    "pdfjs-dist": "^3.8.162",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^16.11.14",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "json-server": "^0.17.3",
+    "jsonwebtoken": "^9.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-pdf": "^7.2.0",
+    "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -22,10 +27,7 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "root": true
   },
   "browserslist": {
     "production": [
@@ -38,14 +40,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@webpack-cli/generators": "^3.0.7",
-    "html-webpack-plugin": "^5.5.3",
-    "prettier": "^3.0.0",
-    "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1",
-    "workbox-webpack-plugin": "^7.0.0"
   }
 }

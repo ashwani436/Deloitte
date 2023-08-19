@@ -1,13 +1,19 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
-const jwtConfig = require('../../jwtConfig');
-const db = require('../../db.json');
-// const cors = require('cors');
+// const jwtConfig = require('../server-api/jwtConfig');
+const db = require('../server-api/db.json');
+const cors = require('cors');
+
 
 const app = express();
 app.use(bodyParser.json());
-// app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:5000', // Replace with your frontend's address
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204,
+}));
 
 app.post('/login', (req, res) => {
   const { username, password } = req.body;
@@ -37,7 +43,6 @@ app.post('/register', (req, res) => {
 
 
 const port = 5000; 
-
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
