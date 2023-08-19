@@ -7,5 +7,5 @@
   2) In the terminal, run `npm install`
   3) Run `npm start` to view project in browser
   4) To run  to run  node server use command npm run server and
-  5)  to run application use command npm start.
+  5) To run application use command npm start.
   
