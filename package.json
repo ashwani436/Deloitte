@@ -1,5 +1,5 @@
 {
-  "name": "React-Authentication",
+  "name": "react-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,7 +11,7 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "axios": "^1.4.0",
-    "cors": "^2.8.5",
+    "cors-anywhere": "^0.4.4",
     "json-server": "^0.17.3",
     "jsonwebtoken": "^9.0.1",
     "react": "^18.2.0",

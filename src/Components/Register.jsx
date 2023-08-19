@@ -21,14 +21,17 @@ const Register = () => {
       const response = await axios.post('http://localhost:5000/register', {
         username,
         password,
-      });
+      },
+        {
+          "Content-Type": "application/json"
+        })
 
       // Registration successful
       console.log('Registration successful:', response.data);
       navigate('/'); 
     } catch (error) {
       console.error('Registration error:', error);
-      setRegistrationError('Registration failed. Please try again.');
+      // setRegistrationError('Registration failed. Please try again.');
     }
   };
 
